@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:textDirection="ltr"
+    android:background="@android:color/white"
+    android:layoutDirection="ltr"
+    tools:context=".StartActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Chat App"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:layout_height="50dp"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/start_login"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/button_background"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/start_register"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/button_background"/>
+
+
+</LinearLayout>

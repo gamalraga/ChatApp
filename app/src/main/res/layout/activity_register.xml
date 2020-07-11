@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:textDirection="ltr"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <include layout="@layout/bar_layout"
+        android:id="@+id/toolbar"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_below="@id/toolbar"
+        android:gravity="center_horizontal"
+>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Create new Account"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            app:met_floatingLabel="normal"
+            android:layout_marginTop="10dp"
+            android:hint="Username"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_floatingLabel="normal"
+            android:id="@+id/email"
+            android:hint="Email"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_floatingLabel="normal"
+            android:id="@+id/password"
+            android:hint="Password"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            />
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Register"
+    android:background="@drawable/button_background"
+    android:id="@+id/btn_register"
+    android:textColor="@color/colorPrimary"
+    android:textStyle="italic"
+    android:textAllCaps="false"
+    />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo"/>
+
+    </LinearLayout>
+</RelativeLayout>
